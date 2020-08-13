@@ -1,0 +1,2 @@
+# chrome-graphql-voyager
+Chrome extension for [GraphQL Voyager](https://github.com/APIs-guru/graphql-voyager). Running the GraphQL Voyager as an extension overcomes CORS issues that occur when loading it from the web (you're able to call any GraphQL endpoint). From the "Settings" screen, setting the `request.credentials` option to `include` allows you to pass cookie credentials to any GraphQL endpoint that requires it.
