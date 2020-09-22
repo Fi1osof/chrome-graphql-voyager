@@ -5,10 +5,11 @@
     "name": "Nikolay Lanets",
     "email": "n.lanets@newpg.ru"
   },
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "react-scripts --max-old-space-size=2048 start",
     "build": "webpack",
     "zip": "yarn build && zip -r ../chrome-graphql-voyager.zip manifest.json package.json cgp.html LICENSE README.md cgp.html src/background.js public dist",
     "release": "echo 'Remember to update and stage the version number in manifest.json first!' && yarn version && git push --follow-tags"
@@ -34,13 +35,27 @@
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^1.0.0",
     "file-loader": "^1.1.11",
-    "graphql": "^0.13.2",
+    "graphql": "^15.3.0",
     "jquery": "^3.2.1",
+    "react-scripts": "^3.4.3",
     "style-loader": "^0.21.0",
     "svg-inline-loader": "^0.8.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "webpack-cli": "^3.3.12"
   },
   "resolutions": {
     "cuid": "2.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
