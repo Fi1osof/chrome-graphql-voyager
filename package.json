@@ -11,7 +11,7 @@
   "scripts": {
     "start": "react-scripts --max-old-space-size=2048 start",
     "build": "webpack",
-    "zip": "yarn build && zip -r ../chrome-graphql-voyager.zip manifest.json package.json cgp.html LICENSE README.md cgp.html src/background.js public dist",
+    "zip": "yarn build && zip -r ./pack/chrome-graphql-voyager.zip manifest.json package.json cgp.html LICENSE README.md cgp.html src/background.js public dist",
     "release": "echo 'Remember to update and stage the version number in manifest.json first!' && yarn version && git push --follow-tags"
   },
   "dependencies": {
