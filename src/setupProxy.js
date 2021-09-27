@@ -14,7 +14,7 @@ module.exports = function (app) {
   });
 
   app.use(proxy('/services/graphql', {
-    target: 'http://localhost:4080',
+    target: 'http://localhost:3000',
     ws: true,
   }));
 

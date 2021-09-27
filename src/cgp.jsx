@@ -8,7 +8,8 @@ import { Voyager } from 'graphql-voyager';
 
 import Menu from './Menu/index.jsx';
 
-const DEFAULT_ENDPOINT = 'http://localhost:4080/services/graphql';
+// const DEFAULT_ENDPOINT = 'http://localhost:4080/services/graphql';
+const DEFAULT_ENDPOINT = 'http://localhost:3000/api/';
 
 /**
  * Override default Apollo link in order to force credentials value to "include" in order to allow
